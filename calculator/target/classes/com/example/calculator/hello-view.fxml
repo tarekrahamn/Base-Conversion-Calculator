@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="308.0" prefWidth="440.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.calculator.HelloController">
+    <children>
+        <VBox layoutX="220.0" layoutY="158.0" prefHeight="150.0" prefWidth="218.0">
+            <children>
+                <Button mnemonicParsing="false" onAction="#H" prefHeight="50.0" prefWidth="218.0" text="H" />
+                <Button mnemonicParsing="false" onAction="#nextScene" prefHeight="50.0" prefWidth="220.0" text="Next Screen" />
+                <Button mnemonicParsing="false" onAction="#clear" prefHeight="50.0" prefWidth="220.0" text="Clear" />
+            </children>
+        </VBox>
+        <VBox layoutX="2.0" layoutY="158.0" prefHeight="150.0" prefWidth="217.0">
+            <children>
+                <Button mnemonicParsing="false" onAction="#B" prefHeight="50.0" prefWidth="218.0" text="B" />
+                <Button mnemonicParsing="false" onAction="#O" prefHeight="50.0" prefWidth="220.0" text="O" />
+                <Button mnemonicParsing="false" onAction="#exit" prefHeight="50.0" prefWidth="220.0" text="Exit" />
+            </children>
+        </VBox>
+        <TextField fx:id="input" prefHeight="57.0" prefWidth="440.0" promptText=" Place Decimal Input Here" />
+        <Label fx:id="output" alignment="CENTER" layoutX="39.0" layoutY="71.0" prefHeight="60.0" prefWidth="374.0" text="No Input" textAlignment="CENTER" textFill="#405e49">
+            <font>
+                <Font name="Arial" size="40.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>
